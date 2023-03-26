@@ -1,0 +1,109 @@
+@import "../../index.scss";
+.mask{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(33, 33, 33, 0);
+
+  .inputBox {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 80%;
+    max-width: 350px;
+    background-color: $bar-color;
+    border: solid 2px $bar-color;
+    border-radius: 4vmin;
+    .fault{
+      height: 10%;
+      margin-bottom: 2%;
+    }
+
+    
+    >input{
+      background-color: $bar-color;
+      color: white;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid rgb(187, 187, 187);
+      padding: 1%;
+      margin: 0;
+      margin-bottom: 10%;
+      font-size: large;
+    }
+    >button{
+      width: 20%;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      border-radius: 1.75vh;
+      color: $main-color;
+    }
+  }
+
+}
+
+.shake-horizontal {
+	-webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+@-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}

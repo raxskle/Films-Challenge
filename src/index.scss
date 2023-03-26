@@ -1,0 +1,68 @@
+// 公共样式、变量
+
+$bg-color:rgb(18, 18, 18);
+$bar-color:rgb(29, 29, 29);
+$main-color:rgb(73, 233, 180);
+
+$font: "NOTO SERIF SC";
+
+// @font-face {
+//   font-family: "NOTO SERIF SC SEMIBOLD";
+//   src: url('./assests/NotoSerifSC-SemiBold.otf');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "NOTO SERIF";
+//   src: url('./assests/Noto Serif.ttf');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: "NOTO SERIF SC";
+  src: url('./assests/NotoSerifSC-VF.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: $main-color;
+  // font-family: $font;
+  font-display: fallback;
+  background-color: $bg-color;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scrollbar-width: none; /* firefox */
+  -ms-overflow-style: none;   /* IE 10+ */
+  &::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;/* 移动端点击蓝色阴影 */
+}
+
+a{
+  text-decoration: none;
+  color: $main-color;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button{
+  background-color: transparent;
+  border: 2px solid $main-color;
+  // font-family: $font;
+  cursor: pointer;
+}

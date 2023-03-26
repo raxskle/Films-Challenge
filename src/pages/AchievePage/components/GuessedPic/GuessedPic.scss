@@ -1,0 +1,77 @@
+@import "../../../../index.scss";
+
+.picWrap{
+  height: 30vmin;
+  width: 30vmin;
+  margin: 1vmin;
+  border-radius: 4%;
+  overflow: hidden;
+  box-sizing: border-box; 
+  // border: 1px solid $bar-color;
+  .guessedpic{  
+    height: 100%;
+  }
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+}
+
+.bigTitle{
+  margin-top: 2vh;
+  min-width: 40%;
+  padding-bottom: 1vmin;
+  padding-left: 2vmin;
+  padding-right: 2vmin;
+  box-shadow: 0 8px 12px -9px $main-color;
+}
+
+.bigW{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: $bg-color;
+  animation: show 0.3s ease;
+  transition: all 0.3s;
+  .big{
+    width: 90%;
+    height: auto;
+  }
+}
+
+.bigWfade{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  animation: show 0.2s ease;
+  transition: all 0.2s;
+  opacity: 0;
+  .big{
+    width: 90%;
+    height: auto;
+  }
+}
+
+
+
+
+@keyframes show {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
