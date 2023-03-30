@@ -1,3 +1,4 @@
+import { Base64 } from "js-base64";
 import axiosInstance from "./index.js";
 
 // 后端直接返回数据pic
@@ -19,9 +20,9 @@ async function requestRecord(recordCode) {
 }
 
 async function requestAll(userid, amount) {
-  let response = await axiosInstance.get(
-    `/api/all?userid=${userid}&amount=${amount}`
-  );
+  let userInfo = `${userid},${amount}`;
+  let userInfoCode = Base64.encodeURI(userInfo);
+  let response = await axiosInstance.get(`/api/all?data=${userInfoCode}`);
   return response.data;
 }
 

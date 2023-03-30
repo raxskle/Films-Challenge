@@ -18,7 +18,7 @@ const getRecordFromLocalStorage = () => {
     // 非第一次登陆，返回串
     let record = Base64.decode(recordCode);
     const arr = record.split(",");
-    console.log(arr);
+    // console.log(arr);
     const userId = arr.pop();
     const guessedIdArr = arr;
     return [guessedIdArr, userId, guessedIdArr.length];

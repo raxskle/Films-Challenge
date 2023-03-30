@@ -38,7 +38,7 @@ let loadQueues = async () => {
   setLoading(() => true);
   let [guessedArr, userId, amount] = getRecordFromLocalStorage(); // 得到本地数据
   let allPics = await requestAll(userId, amount); // 请求所有图片
-  console.log(" 全量请求到的数据", allPics);
+  // console.log(" 全量请求到的数据", allPics);
   let picsQueueData = [];
   let guessedQueueData = [];
   // 分发为两个数组
@@ -55,8 +55,8 @@ let loadQueues = async () => {
   picsQueueData.sort(() => {
     return 0.5 - Math.random();
   });
-  console.log("picsQueue", picsQueueData);
-  console.log("guessedQueue", guessedQueueData);
+  // console.log("picsQueue", picsQueueData);
+  // console.log("guessedQueue", guessedQueueData);
   setPicsQueue(picsQueueData);
   setGuessedQueue(guessedQueueData);
   setLoading(() => false);
@@ -86,7 +86,7 @@ let guessedCorrect = () => {
   setGuessedQueue((prev) => {
     return [correct, ...prev];
   });
-  console.log("新增已猜对", correct, guessedQueue.length);
+  // console.log("新增已猜对", correct, guessedQueue.length);
   // 更新本地串
   updateLocalStorage(correct.id);
 };

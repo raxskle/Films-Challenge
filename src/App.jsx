@@ -5,7 +5,7 @@ import './App.scss';
 import Router from "./router";
 import { useInitQueues, loadQueues, useLoading} from './data/Queues';
 import { useEffect } from 'react';
-import { useShowMenu } from './components/Menu/showMenu';
+
 
 function App() {
   useInitQueues();
@@ -14,22 +14,15 @@ function App() {
     loadQueues();
     
   }, [])
-  let [, setShowMenu] = useShowMenu();
 
-  useEffect(() => {
-    // 关闭右上角栏
-    window.addEventListener("click", (e) => {
-      if (e.target.className !== "menuItem") {
-        setShowMenu(false);
-      }
-    })
-  }, [setShowMenu]);
+
 
   useEffect(() => {
     // 防止移动端输入法造成页面高度被压缩
     let height = document.body.clientHeight;
     window.onresize = () => {
       document.querySelector(".App").style.height = height+`px`;
+      document.querySelector(".header").style.height = 0.07*height+`px`;
     }
   }, []);
 

@@ -47,6 +47,11 @@
         width: 3.24vh;  
         aspect-ratio: 1;
       }
+      &:hover{
+        svg{
+          color: $main-color;
+        }
+      }
       svg{
         width: 100%;
         height: 100%;

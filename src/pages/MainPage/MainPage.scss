@@ -82,16 +82,24 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
+
     >div{
       height: 30%;
       aspect-ratio: 1.4;
       width: 8.4vh;      
-      background-color: $bar-color;
+      background-color: $btn-color;
       color: $main-color;   
-
-      border-radius: 1.75vh;
+      &:active{
+        color: $main-deep-color;
+        a{
+          color: $main-deep-color;
+        }
+      }
+      // border-radius: 1.75vh;
+      border-radius: 1.25vh;
       border: 1px solid $main-color;  
-      cursor: pointer;             
+      cursor: pointer;     
+              
     }
     // .toAchieve{
 

@@ -18,7 +18,7 @@
     max-width: 350px;
     background-color: $bar-color;
     border: solid 2px $bar-color;
-    border-radius: 4vmin;
+    border-radius: 3vmin;
     .fault{
       height: 10%;
       margin-bottom: 2%;
@@ -33,15 +33,20 @@
       border-bottom: 1px solid rgb(187, 187, 187);
       padding: 1%;
       margin: 0;
-      margin-bottom: 10%;
+      margin-bottom: 6%;
       font-size: large;
     }
     >button{
       width: 20%;
       padding-top: 3%;
       padding-bottom: 3%;
-      border-radius: 1.75vh;
+      // border-radius: 1.75vh;
+      border-radius: 1vh;
+      background-color: $btn-color;
       color: $main-color;
+      &:active{
+        color: $main-deep-color;
+      }
     }
   }
 
