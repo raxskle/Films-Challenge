@@ -1,12 +1,11 @@
 // 公共样式、变量
 
-$bg-color:rgb(18, 18, 18);
-$bar-color:rgb(29, 29, 29);
-$main-color:rgb(73, 233, 180);
-$main-deep-color:rgb(3, 146, 98);
-$btn-color:rgb(24, 37, 30);
-
-$font: "NOTO SERIF SC";
+// $bg-color: rgb(18, 18, 18);
+$bg-color: rgb(15, 20, 28);
+$bar-color: rgb(15, 20, 28);
+$main-color: rgb(147, 181, 207);
+$main-deep-color: rgb(20, 35, 52);
+$btn-color: rgb(20, 74, 116);
 
 // @font-face {
 //   font-family: "NOTO SERIF SC SEMIBOLD";
@@ -22,14 +21,8 @@ $font: "NOTO SERIF SC";
 //   font-style: normal;
 // }
 
-@font-face {
-  font-family: "NOTO SERIF SC";
-  src: url('./assests/NotoSerifSC-VF.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -44,25 +37,20 @@ div {
   justify-content: center;
   align-items: center;
   scrollbar-width: none; /* firefox */
-  -ms-overflow-style: none;   /* IE 10+ */
+  -ms-overflow-style: none; /* IE 10+ */
   &::-webkit-scrollbar {
     display: none; /* Chrome Safari */
   }
   user-select: none;
-  -webkit-tap-highlight-color: transparent;/* 移动端点击蓝色阴影 */
+  -webkit-tap-highlight-color: transparent; /* 移动端点击蓝色阴影 */
 }
 
-a{
+a {
   text-decoration: none;
   color: $main-color;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-button{
+button {
   background-color: transparent;
   border: 2px solid $main-color;
   // font-family: $font;

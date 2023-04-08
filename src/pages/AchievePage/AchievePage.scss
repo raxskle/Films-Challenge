@@ -7,56 +7,57 @@
   justify-content: space-between;
   align-items: center;
   background-color: $bg-color;
-  .header{
-
-    .btn{
+  .header {
+    .btn {
       height: 90%;
       width: 30%;
     }
-    .more{
+    .more {
       font-size: larger;
       margin-left: 4%;
       justify-content: flex-start;
       color: $main-color;
-      .menuItem{
+      .menuItem {
         color: white;
-        cursor: pointer;    
-        height: 65%; 
-        width: 3.51vh;
-        aspect-ratio: 1;  
-        svg{
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        aspect-ratio: 1;
+        svg {
           width: 100%;
           height: 100%;
-          color: #ffffff;     
-          pointer-events: none;   
+          color: #ffffff;
+          pointer-events: none;
         }
       }
     }
-    .score{
+    .score {
       color: white;
-      font-size: larger;
+      font-weight: bold;
       .smallSpan {
-        font-size: small;
+        font-weight: normal;
       }
     }
-    .toM{
-      >a{
-        color: white;    
+    .toM {
+      > a {
+        color: white;
         display: inline-block;
-        height: 60%;        
-        width: 3.24vh;  
-        aspect-ratio: 1;
-      }
-      &:hover{
-        svg{
-          color: $main-color;
+        height: 30px;
+        width: 30px;
+        border-radius: 25%;
+
+        background-color: $btn-color;
+        &:hover {
+          svg {
+            color: $main-color;
+          }
         }
       }
-      svg{
+      svg {
         width: 100%;
         height: 100%;
-        color: #ffffff;     
-        pointer-events: none;   
+        color: #ffffff;
+        pointer-events: none;
       }
       // height: 90%;
       font-size: larger;
@@ -69,8 +70,8 @@
   }
 }
 
-.Acontainer{
-  height: 93vh;
+.Acontainer {
+  height: 90vh;
   width: 100%;
   overflow-y: hidden;
   display: flex;
@@ -78,9 +79,9 @@
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  
-  .Abox{
-    width: 96%;
+
+  .Abox {
+    width: 96vmin;
     margin-top: 2vw;
     height: auto;
     overflow-y: scroll;
@@ -88,9 +89,5 @@
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-
   }
-
-
 }
-

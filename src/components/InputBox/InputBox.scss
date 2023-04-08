@@ -1,5 +1,5 @@
 @import "../../index.scss";
-.mask{
+.mask {
   position: absolute;
   top: 0;
   width: 100vw;
@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(33, 33, 33, 0);
+  background-color: rgba(0, 0, 0, 0);
 
   .inputBox {
     flex-direction: column;
@@ -19,13 +19,12 @@
     background-color: $bar-color;
     border: solid 2px $bar-color;
     border-radius: 3vmin;
-    .fault{
+    .fault {
       height: 10%;
       margin-bottom: 2%;
     }
 
-    
-    >input{
+    > input {
       background-color: $bar-color;
       color: white;
       outline: none;
@@ -36,79 +35,79 @@
       margin-bottom: 6%;
       font-size: large;
     }
-    >button{
+    > button {
       width: 20%;
       padding-top: 3%;
       padding-bottom: 3%;
       // border-radius: 1.75vh;
-      border-radius: 1vh;
+      border-radius: 1.75vmin;
       background-color: $btn-color;
       color: $main-color;
-      &:active{
+      &:active {
         color: $main-deep-color;
       }
     }
   }
-
 }
 
 .shake-horizontal {
-	-webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-	        animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  -webkit-animation: shake-horizontal 0.8s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 @-webkit-keyframes shake-horizontal {
   0%,
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   10%,
   30%,
   50%,
   70% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateX(-10px);
   }
   20%,
   40%,
   60% {
     -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
   80% {
     -webkit-transform: translateX(8px);
-            transform: translateX(8px);
+    transform: translateX(8px);
   }
   90% {
     -webkit-transform: translateX(-8px);
-            transform: translateX(-8px);
+    transform: translateX(-8px);
   }
 }
 @keyframes shake-horizontal {
   0%,
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   10%,
   30%,
   50%,
   70% {
     -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    transform: translateX(-10px);
   }
   20%,
   40%,
   60% {
     -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    transform: translateX(10px);
   }
   80% {
     -webkit-transform: translateX(8px);
-            transform: translateX(8px);
+    transform: translateX(8px);
   }
   90% {
     -webkit-transform: translateX(-8px);
-            transform: translateX(-8px);
+    transform: translateX(-8px);
   }
 }

@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const ConfigBaseURL = "http://localhost:1002";
-// const ConfigBaseURL = "https://demo.raxskle.fun/";
+// const ConfigBaseURL = "http://localhost:1002";
+const ConfigBaseURL = "https://demo.raxskle.fun/";
 
 let axiosInstance = axios.create({
   headers: {
